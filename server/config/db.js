@@ -4,8 +4,7 @@ const mongoose = require("mongoose");
 async function connection() {
   try {
     // await mongoose.connect(`${process.env.MONGO_URL}`, {
-    await mongoose.connect(
-      "mongodb+srv://rishu:jha@cluster0.txlyzmp.mongodb.net/discord?retryWrites=true&w=majority",
+    await mongoose.connect(`${process.env.MONGO_URL}`,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
